@@ -1,0 +1,23 @@
+header{
+    background: url(/img/bg-slider-06.jpg)center/cover;
+    height: 100vh;
+
+    .title-container{
+        margin: 75px auto 0;
+
+        h2{
+            font-size: 3rem;
+        }
+
+    }
+    #head-img{
+        width: 20px;
+        padding: 20px 0;
+    }
+    p{
+        font-family: $font3;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}

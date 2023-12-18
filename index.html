@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="./styles/pages/index.css" />
   </head>
   <body>
     <header>
@@ -27,13 +28,18 @@
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-instagram"></i></li>
         </ul>
+      </nav>
+      <div class="title-container">
         <h2>Welcome to</h2>
         <h1>the resto</h1>
-        <span
-          ><img src="./img/ic-plate-big.png" alt="fork and spoon (white)"
-        /></span>
-        <p>we serve only the freshest ingredients !</p>
-      </nav>
+      </div>
+      <span
+        ><img
+          src="./img/ic-plate-big.png"
+          alt="fork and spoon (white)"
+          id="head-img"
+      /></span>
+      <p>we serve only the freshest ingredients !</p>
     </header>
     <main>
       <section class="section1">
@@ -45,12 +51,11 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a,
               dignissimos, iste nulla error incidunt consequuntur saepe soluta
-              harum doloremque corrupti! A obcaecati accusantium eos
-              consequatur. Laborum quia nihil nam ad harum quisquam amet
-              eligendi?
+              harum doloremque corrupti! consectetur adipisicing elit.
             </p>
             <div class="rounded-img">
-              <p>Russel Stephens</p>
+              <div></div>
+              <h6 class="chef-name">Russel Stephens</h6>
               <p>chef cook</p>
             </div>
           </div>
@@ -73,69 +78,69 @@
           </ul>
         </nav>
         <div class="dish-menu">
-          <div class="slice1">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>italian source mushroom</h4>
               <p>Mushroom / Garlic / Veggies</p>
             </div>
-            <p>$12</p>
+            <p class="price">$12</p>
           </div>
-          <div class="slice2">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>fried potatoes with garlic</h4>
               <p>Potatoes / Olive Oil / garlic</p>
             </div>
-            <p>$22</p>
+            <p class="price">$22</p>
           </div>
-          <div class="slice3">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>tuna roast source</h4>
               <p>tuna / potatoes / rice</p>
             </div>
-            <p>$15</p>
+            <p class="price">$15</p>
           </div>
-          <div class="slice4">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>roast pork (4 sticks)</h4>
               <p>pork / Veggies / shoyu</p>
             </div>
-            <p>$18</p>
+            <p class="price">$18</p>
           </div>
-          <div class="slice5">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>salted fried chicken</h4>
               <p>chicken / olive oil / salt</p>
             </div>
-            <p>$20</p>
+            <p class="price">$20</p>
           </div>
-          <div class="slice6">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>crab with curry sources</h4>
               <p>crab / potatoes / rice</p>
             </div>
-            <p>$14</p>
+            <p class="price">$14</p>
           </div>
-          <div class="slice7">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>imported salmon steak</h4>
               <p>salmon / veggies / oil</p>
             </div>
-            <p>$16</p>
+            <p class="price">$16</p>
           </div>
-          <div class="slice8">
+          <div class="slice">
             <div class="rounded-img"></div>
             <div class="dish-txt">
               <h4>baked potatoes pizza</h4>
               <p>potatoes / bread / cheese</p>
             </div>
-            <p>$25</p>
+            <p class="price">$25</p>
           </div>
         </div>
       </section>
@@ -204,7 +209,7 @@
                 <input type="email" name="email" id="email" />
               </div>
               <div class="submit-btn">
-                <input type="submit" value="Book Now" />
+                <input type="submit" value="Book Now" id="button" />
               </div>
             </form>
           </div>
@@ -254,8 +259,77 @@
               </div>
             </div>
           </div>
+          <div class="gc-right">
+            <div class="gc-right-txt-container">
+              <div class="grid-txt-container">
+                <p>08</p>
+                <p>July</p>
+              </div>
+              <h4>Thousands celebrities at Johnnie Night</h4>
+              <p>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                Restaurant Resto
+                <span><i class="fa-regular fa-clock"></i></span> 10:00pm -
+                6:00am
+              </p>
+              <a href="https://www.google.fr/" target="_blank">buy tickets</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section5">
+        <div class="txt-container">
+          <span><i class="fa-solid fa-quote-left"></i></span>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            dolorem labore iusto, nam repudiandae at aspernatur soluta
+            dignissimos consequuntur. Expedita accusamus voluptatem, minus
+            delectus deserunt rem enim accusantium temporibus explicabo fuga
+            amet reiciendis? Est rem harum, sit incidunt nihil facilis!
+          </p>
+          <span><i class="fa-solid fa-quote-right"></i></span>
+          <div class="rounded-img">
+            <h6 class="chef-name">Stephanie Opkins</h6>
+            <p>CEO - HeadPassion</p>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-left">
+        <div class="fl-text-container">
+          <h2>Resto</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            esse excepturi natus facilis fuga assumenda.
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="fr-text-container">
+          <div class="newsletter">
+            <h5>newsletter</h5>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+            />
+          </div>
+          <div class="follow">
+            <h5>follow us:</h5>
+            <ul>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
