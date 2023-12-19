@@ -42,7 +42,7 @@ h3 {
 h4 {
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 h6 {
@@ -63,6 +63,11 @@ body {
 .price {
   color: rgb(156, 107, 65);
   font-weight: bold;
+}
+
+.fork-img {
+  width: 20px;
+  padding: 20px 0;
 }
 
 #button {
@@ -86,10 +91,6 @@ header .title-container {
 }
 header .title-container h2 {
   font-size: 3rem;
-}
-header #head-img {
-  width: 20px;
-  padding: 20px 0;
 }
 header p {
   font-family: Roboto, sans-serif;
@@ -132,6 +133,7 @@ nav ul li {
   font-size: 0.8rem;
   cursor: pointer;
   position: relative;
+  padding-bottom: 5px;
 }
 nav ul li:hover {
   font-weight: bold;
@@ -220,33 +222,64 @@ nav .nav-logo li:hover::after {
   width: 100%;
 }
 
-.section2 img {
-  width: 20px;
+.section2 {
+  margin: 80px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.section2::after {
+  content: "";
+  position: absolute;
+  background: url(/img/bg-menu-01.jpg) center/cover;
+  height: 70%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 .section2 .dish-menu {
   margin: 10px auto;
   padding: 20px;
   background: rgb(238, 238, 238);
-  width: 80%;
+  width: 65%;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   -webkit-box-shadow: 0px -3px 0px rgb(156, 107, 65);
           box-shadow: 0px -3px 0px rgb(156, 107, 65);
+  -webkit-transform: translateZ(45px);
+          transform: translateZ(45px);
 }
 .section2 .dish-menu .slice {
   border-bottom: 1px dashed rgb(0, 0, 0);
-  border-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px;
+  padding: 5px 0;
 }
-.section2 .dish-menu .dish-txt {
+.section2 .dish-menu .slice .dish-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section2 .dish-menu .slice .dish-infos img {
+  border-radius: 50px;
+  width: 30%;
+}
+.section2 .dish-menu .slice .dish-infos .dish-txt {
   text-align: start;
+  margin-left: 10px;
 }
-.section2 .dish-menu .dish-txt p {
+.section2 .dish-menu .slice .dish-infos .dish-txt p {
   font-size: 0.7rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=index.css.map */
