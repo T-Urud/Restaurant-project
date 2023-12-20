@@ -33,7 +33,7 @@ h1{
     color: $white;
     text-transform: uppercase;
     font-family: $font2;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     font-size: 3rem;
 }
 h2{
@@ -46,6 +46,7 @@ h3{
     text-transform: uppercase;
     font-family: $font2;
     font-size: 1.7rem;
+    line-height: 0.4;
 }
 h4{
     font-family: $font3;
@@ -60,7 +61,10 @@ h6{
 p{
     font-family: $font3;
 }
-
+label{
+    font-family: $font2;
+    font-size: 0.8rem;
+}
 body{
     background: $color2;
     text-align: center;

@@ -165,80 +165,90 @@
       </section>
 
       <section class="section3">
-        <div class="s3-lft-part">
-          <div class="infos">
-            <h2>Time</h2>
-            <h3>open</h3>
-            <span
-              ><img
-                src="./img/ic-plate-big.png"
-                alt="fork and spoon (white)"
-                class="fork-img"
-            /></span>
-            <div class="week">
-              <h4>monday - friday</h4>
-              <p>7AM - 11AM (Breakfast)</p>
-              <p>11AM - 10PM (Lunch/Dinner)</p>
+        <div class="s3-container">
+          <div class="s3-lft-part">
+            <div class="infos">
+              <div class="infos-title">
+                <div>
+                  <h2>Time</h2>
+                  <h3>open</h3>
+                </div>
+              </div>
+              <span
+                ><img
+                  src="./img/ic-plate-big.png"
+                  alt="fork and spoon (white)"
+                  class="fork-img"
+              /></span>
+              <div class="week">
+                <h4>monday - friday</h4>
+                <p>7AM - 11AM (Breakfast)</p>
+                <p>11AM - 10PM (Lunch/Dinner)</p>
+              </div>
+              <div class="weekend">
+                <h4>saturday / sunday</h4>
+                <p>8AM - 1PM (Brunch)</p>
+                <p>1PM - 9PM (Lunch/Dinner)</p>
+              </div>
+              <h4>+15 654 658 98 77</h4>
             </div>
-            <div class="weekend">
-              <h4>saturday / sunday</h4>
-              <p>8AM - 1PM (Brunch)</p>
-              <p>1PM - 9PM (Lunch/Dinner)</p>
-            </div>
-            <h4>+15 654 658 98 77</h4>
           </div>
-        </div>
-        <div class="s3-rgt-part">
-          <h2>Reservation</h2>
-          <h3>online booking</h3>
-          <span
-            ><img
-              src="./img/ic-plate.png"
-              alt="fork and spoon"
-              class="fork-img"
-          /></span>
-          <div class="booking-form">
-            <form action="">
-              <div class="f1">
-                <label for="number of people">People</label>
-                <select name="client" id="number of people">
-                  <option value=""></option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
+          <div class="s3-rgt-part">
+            <div class="s3-right-container">
+              <h2>Reservation</h2>
+              <h3>online booking</h3>
+              <span
+                ><img
+                  src="./img/ic-plate.png"
+                  alt="fork and spoon"
+                  class="fork-img"
+              /></span>
+              <div class="booking-form">
+                <form action="">
+                  <div class="f1">
+                    <label for="number of people">People</label>
+                    <select name="client" id="number-client">
+                      <option value=""></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <div class="f2">
+                    <label for="date"></label>
+                    <input type="date" name="booking-date" id="booking-date" />
+                  </div>
+                  <div class="f3">
+                    <label for="hour"></label>
+                    <input type="time" name="hour" id="hour" />
+                  </div>
+                  <div class="f4">
+                    <input type="text" id="name" placeholder="Name" />
+                  </div>
+                  <div class="f5">
+                    <input type="text" id="phone" placeholder="Phone" />
+                  </div>
+                  <div class="f6">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <button id="form-button">
+                    <input type="submit" value="Book Now" />
+                  </button>
+                </form>
               </div>
-              <div class="f2">
-                <label for="date"></label>
-                <input type="date" name="booking-date" id="booking-date" />
-              </div>
-              <div class="f3">
-                <label for="hour"></label>
-                <input type="time" name="hour" id="hour" />
-              </div>
-              <div class="f4">
-                <label for="name">Name</label>
-                <input type="text" id="name" />
-              </div>
-              <div class="f5">
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" />
-              </div>
-              <div class="f6">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="submit-btn">
-                <input type="submit" value="Book Now" id="button" />
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>

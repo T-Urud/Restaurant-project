@@ -1,11 +1,25 @@
-#button{
-    background: $black;
+#form-button{
     color: $white;
     border: none;
-    height: 40px;
-    width: 170px;
     border-radius: 50px;
-    letter-spacing: 3px;
-    font-family: $font2;
-    text-transform: uppercase;
+    max-width: 90%;
+    
+    
+    input[type="submit"]{
+        letter-spacing: 2px;
+        font-family: $font2;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background: $black;
+        color: $white;
+        height: 100%;
+        width: 100%;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+    }
+
 }

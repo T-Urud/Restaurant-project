@@ -1,0 +1,82 @@
+form{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    grid-template-areas: 
+    "f1 f2 f3"
+    "f4 f5 f6"
+    ". f7 .";
+    column-gap: 20px;
+    row-gap: 20px;
+
+    #booking-date,
+    #hour,
+    #name,
+    #phone,
+    #email{
+        outline: none;
+        border: none;
+        background: $white;
+    }
+    input[type="email"],
+    input[type="text"]{
+        max-width: 100%;
+    }
+    
+    .f1,
+    .f2,
+    .f3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .f1{
+        grid-area: f1;
+
+        #number-client{
+            border: none;
+            background: $white;
+            padding-left: 25px;
+        }
+    }
+    .f2{
+        grid-area: f2;
+
+        input[type="date" i]{
+            width: 100%;
+        }
+    }
+    .f3{
+        grid-area: f3;
+
+        input[type="time" i]{
+            width: 100%;
+        }
+    }
+    .f4{
+        grid-area: f4;
+    }
+    .f5{
+        grid-area: f5;
+    }
+    .f6{
+        grid-area: f6;
+    }
+    #form-button{
+        grid-area: f7;
+    }
+
+
+    .f1,
+    .f2,
+    .f3,
+    .f4,
+    .f5,
+    .f6{
+        border-bottom: 1px solid $grey;
+        margin-bottom: 15px;
+        width: 90%;  
+    }
+}

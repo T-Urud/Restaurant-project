@@ -22,7 +22,7 @@ h1 {
   color: rgb(238, 238, 238);
   text-transform: uppercase;
   font-family: Poppins, sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   font-size: 3rem;
 }
 
@@ -37,6 +37,7 @@ h3 {
   text-transform: uppercase;
   font-family: Poppins, sans-serif;
   font-size: 1.7rem;
+  line-height: 0.4;
 }
 
 h4 {
@@ -55,6 +56,11 @@ p {
   font-family: Roboto, sans-serif;
 }
 
+label {
+  font-family: Poppins, sans-serif;
+  font-size: 0.8rem;
+}
+
 body {
   background: rgb(33, 32, 30);
   text-align: center;
@@ -70,16 +76,108 @@ body {
   padding: 20px 0;
 }
 
-#button {
-  background: rgb(0, 0, 0);
+#form-button {
   color: rgb(238, 238, 238);
   border: none;
-  height: 40px;
-  width: 170px;
   border-radius: 50px;
-  letter-spacing: 3px;
+  max-width: 90%;
+}
+#form-button input[type=submit] {
+  letter-spacing: 2px;
   font-family: Poppins, sans-serif;
   text-transform: uppercase;
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  color: rgb(238, 238, 238);
+  height: 100%;
+  width: 100%;
+}
+#form-button input[type=submit]:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  grid-template-areas: "f1 f2 f3" "f4 f5 f6" ". f7 .";
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+form #booking-date,
+form #hour,
+form #name,
+form #phone,
+form #email {
+  outline: none;
+  border: none;
+  background: rgb(238, 238, 238);
+}
+form input[type=email],
+form input[type=text] {
+  max-width: 100%;
+}
+form .f1,
+form .f2,
+form .f3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+form .f1 {
+  grid-area: f1;
+}
+form .f1 #number-client {
+  border: none;
+  background: rgb(238, 238, 238);
+  padding-left: 25px;
+}
+form .f2 {
+  grid-area: f2;
+}
+form .f2 input[type=date i] {
+  width: 100%;
+}
+form .f3 {
+  grid-area: f3;
+}
+form .f3 input[type=time i] {
+  width: 100%;
+}
+form .f4 {
+  grid-area: f4;
+}
+form .f5 {
+  grid-area: f5;
+}
+form .f6 {
+  grid-area: f6;
+}
+form #form-button {
+  grid-area: f7;
+}
+form .f1,
+form .f2,
+form .f3,
+form .f4,
+form .f5,
+form .f6 {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  margin-bottom: 15px;
+  width: 90%;
 }
 
 header {
@@ -91,6 +189,7 @@ header .title-container {
 }
 header .title-container h2 {
   font-size: 3rem;
+  line-height: 0;
 }
 header p {
   font-family: Roboto, sans-serif;
@@ -141,7 +240,7 @@ nav ul li:hover {
 nav ul li:hover::after {
   content: "";
   position: absolute;
-  height: 1%;
+  height: 1px;
   width: 100%;
   background: rgb(238, 238, 238);
   bottom: 0;
@@ -223,15 +322,13 @@ nav .nav-logo li:hover::after {
 }
 
 .section2 {
-  margin: 80px auto;
-  position: relative;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  margin: 50px auto;
+  background: url(/img/bg-menu-01.jpg) center/cover;
+  background-size: contain no-repeat;
 }
 .section2::after {
   content: "";
   position: absolute;
-  background: url(/img/bg-menu-01.jpg) center/cover;
   height: 70%;
   width: 100%;
   bottom: 0;
@@ -282,4 +379,64 @@ nav .nav-logo li:hover::after {
 .section2 .dish-menu .slice .dish-infos .dish-txt p {
   font-size: 0.7rem;
   text-transform: capitalize;
+}
+
+.section3 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.section3 .s3-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.section3 .s3-container .s3-lft-part {
+  background: rgb(0, 0, 0);
+  padding: 20px;
+}
+.section3 .s3-container .s3-lft-part .infos {
+  border: 1px dashed rgb(238, 238, 238);
+  padding: 10px;
+}
+.section3 .s3-container .s3-lft-part .infos .infos-title h3 {
+  color: rgb(238, 238, 238);
+}
+.section3 .s3-container .s3-lft-part .infos .week,
+.section3 .s3-container .s3-lft-part .infos .weekend {
+  padding-bottom: 30px;
+}
+.section3 .s3-container .s3-lft-part .infos p {
+  color: rgb(238, 238, 238);
+  font-size: 0.7rem;
+}
+.section3 .s3-container .s3-lft-part .infos h4 {
+  color: rgb(156, 107, 65);
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+.section3 .s3-container .s3-rgt-part {
+  background: rgb(238, 238, 238);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section3 .s3-container .s3-rgt-part .s3-right-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+.section3 .s3-container .s3-rgt-part .s3-right-container .booking-form {
+  width: 100%;
+}
+
+.section4 {
+  margin: 50px auto;
+  max-width: 80%;
+}
+.section4 .grid-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }/*# sourceMappingURL=index.css.map */
