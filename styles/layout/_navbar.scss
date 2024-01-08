@@ -17,13 +17,12 @@ nav{
         align-items: center;
 
         li{
-            margin: 0 20px;
             font-family: $font3;
             text-transform: uppercase;
             font-size: 0.8rem;
             cursor: pointer;
             position: relative;
-            padding-bottom: 5px;
+            padding: 0 20px;
 
             &:hover{
                 font-weight: bold;
@@ -33,10 +32,11 @@ nav{
                 content: "";
                 position: absolute;
                 height: 1px;
-                width: 100%;
+                width: 50%;
                 background: $white;
-                bottom: 0;
+                bottom: -5px;
                 left: 0;
+                transform: translateX(50%);
             }
         }
     }

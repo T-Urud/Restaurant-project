@@ -1,6 +1,9 @@
 footer{
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    max-width: 100%;
+
+
 }
 .footer-left{
     background: rgb(22, 21, 19);
